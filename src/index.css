@@ -1,0 +1,187 @@
+@import url('https://rsms.me/inter/inter.css');
+
+@font-face {
+  font-family: 'RampartOne-Regular';
+  src: local('RampartOne-Regular'),
+    url('./static/fonts/RampartOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'TitanOne-Regular';
+  src: local('TitanOne-Regular'),
+    url('./static/fonts/TitanOne-Regular.ttf') format('truetype');
+}
+
+html, body, #root {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Inter var', sans-serif;
+  color: #3e3e3d;
+  /* cursor: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIxNiIgY3k9IjE2IiByPSIxMCIgZmlsbD0iIzNlM2UzZCIvPjwvc3ZnPg=='), auto; */
+}
+
+.app {
+  /* position: absolute; */
+  /* top: 0; */
+  /* left: 0; */
+  width: 100vw;
+  height: 100vh;
+  z-index: -999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing {
+  /* background: blue; */
+  /* width: 100%; */
+  /* height: 100%; */
+  position: absolute;
+  /* right: 0; */
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* pointer-events: none; */
+}
+
+.headline {
+  font-family: TitanOne-Regular;
+  color: white;
+  font-size: 14vw;
+  font-weight: 800;
+  line-height: 0.8em;
+  text-shadow: 20px 20px black;
+}
+
+.header {
+  width: 90vw;
+  /* background: green; */
+  position: fixed;
+  top: 0;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  /* padding-left: 10vw;
+  padding-right: 10vw; */
+}
+
+.header-logo {
+  /* background: pink; */
+  font-family: TitanOne-Regular;
+  color: black;
+  font-size: 28px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header-menu {
+  font-size: 18px;
+  color: black;
+  font-weight: 700;
+}
+
+.body {
+  /* background: lightblue; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+.hero-text {
+  /* background: orange; */
+  font-family: TitanOne-Regular;
+  font-size: 70px;
+  color: white;
+  text-shadow: 5px 5px black;
+}
+
+.message { 
+  /* background: purple; */
+  width: 50vw;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 1000;
+  color: black;
+}
+
+.cta {
+  background: white;
+  border: 1px solid black;
+  width: 33vw;
+  text-align: center;
+  font-size: 22px;
+  color: black;
+  margin-top: 20px;
+  font-weight: 400;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  max-width: 300px;
+  /* padding-left: 5px; */
+  /* padding-right: 5px; */
+  /* border-radius: 1px; */
+  box-shadow: 8px 8px 3px 1px black;
+  cursor: pointer;
+}
+
+.modal-overlay {
+  position: fixed;
+  /* background: green; */
+  /* opacity: .5; */
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-container {
+  background: rgba(0, 0, 0, .9);
+  width: 50%;
+  height: 50%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.modal-header {
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.modal-message {
+  /* font-weight: bold; */
+  font-size: 22px;
+  font-weight: 100px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.modal-close {
+  background: white;
+  color: black;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 40px;
+}
