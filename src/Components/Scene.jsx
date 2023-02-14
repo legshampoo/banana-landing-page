@@ -34,12 +34,12 @@ export default function Scene() {
         minAzimuthAngle={-Infinity}
         maxAzimuthAngle={Infinity}/>
       <Bananas 
-        count={100}
+        count={200}
         speed={1}
         bounds={bounds}
       />
       <EffectComposer>
-        <DepthOfField target={[0, 0, 10]} focalLength={.1} bokehScale={11} height={700} />
+        <DepthOfField target={[0, 0, 0]} focalLength={.3} bokehScale={8} height={700} />
       </EffectComposer>
     </>
   )
