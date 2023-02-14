@@ -34,7 +34,7 @@ export default function Scene() {
         minAzimuthAngle={-Infinity}
         maxAzimuthAngle={Infinity}/>
       <Bananas 
-        count={300}
+        count={100}
         speed={1}
         bounds={bounds}
       />
